@@ -41,7 +41,7 @@ class SendMail(viewsets.ViewSet):
             # print(receivers)
             # receivers=Mails.collection.find()
             receiver_list=[]
-            url='http://127.0.0.1:8002/api/dummy_api'
+            url='https://gdscsit.pythonanywhere.com/api/dummy_api'
             response=requests.get(url)
 
             api_data=response.json()
